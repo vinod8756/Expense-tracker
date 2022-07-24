@@ -6,7 +6,7 @@ import ExpensesChart from './ExpensesChart'
 
 function Expenses(props) {
 
-const [selectedyear , setselectedyear] = useState('2020')
+const [selectedyear , setselectedyear] = useState('2021')
 
 const data = props.data 
 
