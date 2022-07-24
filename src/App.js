@@ -38,10 +38,14 @@ const [data ,setdata] = useState(DummyData)
 const dataHandler = (data) => {
   setdata((prevstate) => [data , ...prevstate] )
 }
+
+const removeExpense = (updatedData) => {
+  setdata(updatedData)
+}
   return (
     <div >
       <AddExpense onAddData = {dataHandler}/>
-      <Expenses data = {data}/>
+      <Expenses data = {data} updatedData = {removeExpense}/>
     </div>
   );
 }
